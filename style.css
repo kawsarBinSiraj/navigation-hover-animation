@@ -1,0 +1,25 @@
+.collapse {
+    position: relative;
+    --left: 0;
+    --width: 0px;
+    --opacity: 0;
+    --height : 100%;
+    z-index: 10;
+}
+.navbar-nav .nav-link {
+    padding-inline: 15px !important;
+}
+
+.animated-line {
+    position: absolute;
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+    bottom: 0;
+    background-color: palevioletred;
+    transition: all .75s cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 10px;
+    opacity: var(--opacity);
+    z-index: -10;
+    border-radius: 0;
+}
